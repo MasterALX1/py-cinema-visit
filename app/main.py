@@ -22,7 +22,7 @@ def cinema_visit(
 
     # Sell food and drinks to each customer
     for customer in customer_list:
-        CinemaBar.sell_product(customer, customer.food)
+        CinemaBar.sell_product(customer.food, customer)
 
     # Start the movie session
     hall.movie_session(movie, customer_list, cleaning_staff)
